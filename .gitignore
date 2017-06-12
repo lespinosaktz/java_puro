@@ -1,6 +1,12 @@
+<<<<<<< d1eee42ad5460c968396afbbb3002a70fc6c5db2
 */.metadata
 */.idea
 */*.iml
 */.project
 bin
 */target
+=======
+.metadata
+.idea
+*.class
+>>>>>>> Ejercicios del 1 a 3
