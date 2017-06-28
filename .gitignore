@@ -1,3 +1,7 @@
-.metadata
-.idea
+*/.metadata
+*/.idea
+*/*.iml
+*/.project
+bin
+*/target
 *.class

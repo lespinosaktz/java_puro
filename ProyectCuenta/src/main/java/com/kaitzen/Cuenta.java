@@ -7,8 +7,8 @@ public class Cuenta {
 	private String name;
 	private Integer id;
 	private Random RDID = new Random();
-	private static Integer MIN_SEED = 1;
-	private static Integer MAX_SEED = 1000;
+	private static int MIN_SEED = 1;
+	private static int MAX_SEED = 1000;
 	
 	public Cuenta() {
 		this.id = getRdId();
@@ -63,10 +63,10 @@ public class Cuenta {
 		this.amount -= amount;
 	}
 	
-	public Integer getRdId(){
-		Integer dif;
-		Integer minseed = RDID.nextInt(MIN_SEED);
-		Integer maxseed = RDID.nextInt(MAX_SEED);
+	public int getRdId(){
+		int dif;
+		int minseed = RDID.nextInt(MIN_SEED);
+		int maxseed = RDID.nextInt(MAX_SEED);
 		if (maxseed > minseed){
 			 dif = maxseed - minseed;	
 		} else {
