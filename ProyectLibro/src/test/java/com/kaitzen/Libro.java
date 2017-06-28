@@ -32,12 +32,12 @@ public class Libro {
 	public String toString(){
 		if (this.ubicacion == Ubicacion.BIBLIOTECA){
 			if (this.alumno_resp != null){
-				return "El libro " + this.name + " actualmente está en la: " + this.ubicacion + " y el último en retirarlo fue: " +  this.alumno_resp;
+				return String.format("El libro  %1$s actualmente está en la: %2$s y el último en retirarlo fue: %3$s", this.name, this.ubicacion, this.alumno_resp); 
 			} else {
-				return "El libro " + this.name + " actualmente está en la: " + this.ubicacion + ", todavía no fue prestado";
+				return String.format("El libro %1$s actualmente está en la: %2$s todavía no fue prestado", this.name, this.ubicacion) ;
 			}
 		} else {
-			return "El libro " + this.name + " actualmente está con: " + this.ubicacion + ", quien lo retiró es: " + this.alumno_resp;
+			return String.format("El libro %1$s actualmente está con: %2$s quien lo retiró es: %3$s", this.name, this.ubicacion, this.alumno_resp);
 		}
 	}
 	
